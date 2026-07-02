@@ -72,21 +72,14 @@ delete myQueryData.currentPage;
 delete myQueryData.sort;
 
 
-
 let users = []
 
 users = await User.find({
-
     userName: {
-
-        $regex: myQueryData.search,
-
+        $regex: myQueryData.search || '',  // ✅ undefined ki jagah empty string
         $options: 'i'
-
     }
-
 })
-
 .sort(sortAge)
 
 .limit(limit)

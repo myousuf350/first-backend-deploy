@@ -32,7 +32,7 @@ const signupController = async (req,res) => {
     console.log(uuidv4());
     
 
-  await sendEmailOTP(req.body.email, '12345678')
+//   await sendEmailOTP(req.body.email, '12345678')
 
     res.json({
         status: true,
