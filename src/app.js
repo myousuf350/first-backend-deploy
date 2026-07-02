@@ -62,7 +62,9 @@ app.use('/api/v1/users', usersRoutes)
 
 
 
-app.listen(process.env.PORT, () => {
-    console.log("server is runing on port number", process.env.PORT);
+// app.listen(process.env.PORT, () => {
+//     console.log("server is runing on port number", process.env.PORT);
     
-})
+// })
+
+module.exports = app;
