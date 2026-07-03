@@ -36,7 +36,7 @@ async function main() {
 }
 
 
-app.get('/health', (req,res) => {
+app.get('/', (req,res) => {
 
     res.json({
         status: true,
