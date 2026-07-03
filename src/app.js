@@ -67,4 +67,15 @@ app.use('/api/v1/users', usersRoutes)
     
 // })
 
+// module.exports = app;
+
+
+// saara express code...
+
+if (process.env.NODE_ENV !== "production") {
+    app.listen(process.env.PORT, () => {
+        console.log("Server running on port", process.env.PORT);
+    });
+}
+
 module.exports = app;
